@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general"
+        app:icon="@drawable/list">
+
+            <Preference
+                app:key="clear_all_data"
+                app:title="Clear All Data"
+                app:summary="Clear All Data in database"/>
+
+            <Preference
+                app:key="clear_money_data"
+                app:title="Clear Money Data"
+                app:summary="Clear Money Data in database"/>
+
+            <Preference
+                app:key="clear_todo_data"
+                app:title="Clear TODO Data"
+                app:summary="Clear TODO in database"/>
+
+        </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inmoneymenu.Money_I_and_E">
+
+    <androidx.cardview.widget.CardView
+        style="@style/card_view"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_title"
+                android:textSize="@dimen/textsize_01" />
+
+            <EditText
+                android:id="@+id/title_money"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_amount"
+                android:textSize="@dimen/textsize_01" />
+
+            <EditText
+                android:id="@+id/money_amount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textSize="@dimen/textsize_01" />
+
+            <RadioGroup
+                android:id="@+id/radio_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/income_radioButton"
+                    style="@style/text_colour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="show_category"
+                    android:text="@string/income_rb" />
+
+                <RadioButton
+                    android:id="@+id/expense_radioButton"
+                    style="@style/text_colour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="show_category"
+                    android:text="@string/expense_rb" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/cate_text"
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textSize="@dimen/textsize_01" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/money_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="save_IE"
+                android:text="@string/save"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

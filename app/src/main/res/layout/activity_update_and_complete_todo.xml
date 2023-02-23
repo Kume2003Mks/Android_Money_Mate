@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intodomenu.update_and_complete_todo">
+
+    <androidx.cardview.widget.CardView
+        style="@style/card_view"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_title"
+                android:textSize="@dimen/textsize_01" />
+
+            <EditText
+                android:id="@+id/title_todo_update"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/text_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_description"
+                android:textSize="@dimen/textsize_01" />
+
+            <EditText
+                android:id="@+id/desc_todo_update"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/update_todo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="update_todo"
+                android:text="@string/save"
+                app:cornerRadius="16dp" />
+
+            <Button
+                android:id="@+id/complete_todo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="complete_todo"
+                android:text="@string/complete"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

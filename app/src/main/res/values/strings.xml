@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MoneyMate</string>
+    <string name="title_home">Home</string>
+    <string name="title_todo">TODO</string>
+    <string name="title_money">Money</string>
+    <string name="balance">Balance</string>
+    <string name="summary">summary</string>
+    <string name="money_list">Money List</string>
+    <string name="IaE">Income and Expenses</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="save">Save</string>
+    <string name="income_rb">INCOME</string>
+    <string name="expense_rb">EXPENSE</string>
+    <string name="type">Type</string>
+    <string name="category">Category</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="setting">Setting</string>
+    <string name="description">Description</string>
+    <string name="update_description">Update Description</string>
+    <string name="update_title">Update Title</string>
+    <string name="complete">Complete</string>
+    <string-array name="category_list">
+        <item>General</item>
+        <item>Food</item>
+        <item>Shopping</item>
+        <item>Fare</item>
+        <item>Utilities</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Setting Preferences -->
+    <string name="database">Database</string>
+    <string name="no_data">No Data</string>
+    <string name="general">General</string>
+    <string name="dark_theme">Dark theme</string>
+</resources>
